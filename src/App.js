@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import NavBar from "./components/NavBar";
 import AboutPage from "./pages/AboutPage";
 import ArticleListPage from "./pages/ArticleListPage";
 import ArticlePage from "./pages/ArticlePage";
@@ -10,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <h1>My Awesome Blog</h1>
+        <NavBar />
         <div id="page-body">
           <Routes>
             <Route path="/" element={<HomePage />} />
